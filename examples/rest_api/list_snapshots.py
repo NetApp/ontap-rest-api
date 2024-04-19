@@ -49,7 +49,7 @@ def get_key(cluster: str, volume_name: str, svm_name: str, headers_inc: str):
     for i in vols:
         if i['name'] == volume_name:
             return i['uuid']
-        return None
+    return None
 
 
 def get_volumes(cluster: str, svm_name: str, headers_inc: str):
